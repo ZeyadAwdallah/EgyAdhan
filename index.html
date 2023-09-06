@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgyAdhan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+<body>
+    <main>
+
+        <header id="header">
+        <h1 id="title"></h1>
+        <h6 id="Date"></h6>
+        <hr>
+        </header>
+
+        <section id="cards">
+
+         <div class="card">
+            <h4>الفجر</h4>
+            <h6 id="Fajr"></h6>
+         </div>
+
+         <div class="card">
+            <h4>الشروق</h4>
+            <h6 id="Sunrise"></h6>
+        </div>
+
+         <div class="card"> 
+            <h4>الظهر</h4>
+            <h6 id="Dhuhr"></h6>
+        </div>
+
+         <div class="card"> 
+            <h4>العصر</h4>
+            <h6 id="Asr"></h6>
+        </div>
+
+         <div class="card">
+             <h4>المغرب</h4>
+            <h6 id="Sunset"></h6>
+        </div>
+
+         <div class="card">
+             <h4>العشاء</h4>
+            <h6 id="Isha"></h6>
+        </div>
+
+        </section>
+        <div id="select">
+        <select name="cities" id="cities">
+            <option value="EG-C">القاهرة</option>
+            <option value="EG-MT">مطروح</option>
+        </select>
+    </div>
+
+
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
