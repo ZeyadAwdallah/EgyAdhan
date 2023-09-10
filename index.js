@@ -3,7 +3,7 @@ const title = document.getElementById("title")
 const cards = document.getElementById("cards")
 const header = document.getElementById("header")
 
-let city=""
+let city="Nothing"
 
 select.addEventListener("change",function(){
     cards.style.visibility="visible";
