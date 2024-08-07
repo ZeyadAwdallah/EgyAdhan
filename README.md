@@ -128,5 +128,5 @@ e").innerHTML = formatTime(timings.Sunrise);
 ```
 
 <div align="center">
-  <img src="/EgyAdhan.PNG" alt="Logo" width="750"/>
+  <img src="/EgyAdhan.PNG" alt="EgyAdhan" width="750"/>
 </div>
