@@ -127,5 +127,3 @@ e").innerHTML = formatTime(timings.Sunrise);
 
 ```
 
-![Uploading egyadhan.PNG…]()
-
