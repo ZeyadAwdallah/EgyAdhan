@@ -116,7 +116,8 @@ function fillPrayerTimes(salah) {
     const weekDay = salah.date.hijri.weekday.ar;
 
     document.getElementById("Fajr").innerHTML = formatTime(timings.Fajr);
-    document.getElementById("Sunrise").innerHTML = formatTime(timings.Sunrise);
+    document.getElementById("Sunris![egyadhan](https://github.com/user-attachments/assets/781794e7-b9c4-4a67-8f3a-c980814ce3fd)
+e").innerHTML = formatTime(timings.Sunrise);
     document.getElementById("Dhuhr").innerHTML = formatTime(timings.Dhuhr);
     document.getElementById("Asr").innerHTML = formatTime(timings.Asr);
     document.getElementById("Sunset").innerHTML = formatTime(timings.Sunset);
@@ -126,4 +127,5 @@ function fillPrayerTimes(salah) {
 
 ```
 
+![Uploading egyadhan.PNG…]()
 
