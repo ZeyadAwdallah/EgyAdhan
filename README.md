@@ -127,3 +127,6 @@ e").innerHTML = formatTime(timings.Sunrise);
 
 ```
 
+<div align="center">
+  <img src="/EgyAdhan.PNG" alt="Logo" width="750"/>
+</div>
