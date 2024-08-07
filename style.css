@@ -1,89 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    box-sizing: border-box;
-}
-body{
-    text-align: right;
-    font-family: 'Cairo', sans-serif;
-    color: white;
-}
-main{
-    min-height: 100vh;
-    height: fit-content;
-    width: 100vw;
-    background: linear-gradient(75deg,rgb(12, 15, 52),rgb(14, 14, 14));
-}
-#header{
-    height: fit-content;
-    padding: 30px;
-    visibility: hidden;
-}
-#header h1{
-    font-weight: 400;
-    font-size: 100px;
-}
-#header h6{
-    font-weight: 200;
-    font-size: 25px; 
-}
-select{
-    background: none;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Cairo', sans-serif;
-    width: 250px;
-    height: 45px;
-    text-align: right;
-    font-size: 25px;
-    text-align-last: center;  
-    direction: rtl;
-    margin-bottom: 20px;
-}
-select option{
- background-color: black;
+
+:root {
+  --main-font: 'Cairo', sans-serif;
+  --primary-color: white;
+  --background-gradient-1: rgb(12, 15, 52);
+  --background-gradient-2: rgb(14, 14, 14);
+  --header-padding: 30px;
+  --card-width: 180px;
+  --card-height: 220px;
 }
 
-#cards{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    visibility: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
 }
-.card{
-    height: 250px;
-    width: 180px;
-    background:white ;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px black;
-    overflow: hidden;
+
+body {
+  text-align: right;
+  font-family: var(--main-font);
+  color: var(--primary-color);
 }
-.card h4{
-    padding: 7px;
-    font-size: 25px;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    background: linear-gradient(20deg,rgb(1, 33, 113),rgb(33, 32, 32));
+
+main {
+  min-height: 100vh;
+  height: fit-content;
+  width: fit;
+  background: linear-gradient(75deg, var(--background-gradient-1), var(--background-gradient-2));
 }
-.card h6{
-    padding: 7px;
-    font-size: 50px;
-    font-weight: 800;
-    color: black;
-    text-align: center;
-    padding-top: 35px;
+
+#header {
+  height: fit-content;
+  padding: var(--header-padding);
+  visibility: hidden;
 }
-#select{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#header h1 {
+  font-weight: 400;
+  font-size: 5rem; 
+}
+
+#header h6 {
+  font-weight: 200;
+  font-size: 1.5rem; 
+}
+
+select {
+  background: none;
+  border-radius: 25px;
+  color: var(--primary-color);
+  font-family: var(--main-font);
+  width: 250px;
+  height: 45px;
+  text-align: right;
+  font-size: 1.5rem;
+  text-align-last: center;
+  direction: rtl;
+  margin-bottom: 40px;
+}
+
+select option {
+  background-color: black;
+}
+
+#cards {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display:none;
+}
+
+.card {
+  height: var(--card-height);
+  width: var(--card-width);
+  background: var(--primary-color);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px black;
+  overflow: hidden;
+}
+
+.card h4 {
+  padding: 7px;
+  font-size: 2rem; 
+  font-weight: 300;
+  color: var(--primary-color);
+  text-align: center;
+  background: linear-gradient(20deg, rgb(1, 33, 113), rgb(33, 32, 32));
+}
+
+.card h6 {
+  padding: 7px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--background-gradient-1);
+;
+  text-align: center;
+  padding-top: 35px;
+}
+
+#select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
